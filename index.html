@@ -12,8 +12,6 @@
       font-family: 'Kanit', sans-serif;
     }
 
-    /* Hint: What can you do with a media query and flexbox? */
-    
       .pricing-container {
         display: flex;
         gap: 20px;
@@ -72,14 +70,33 @@
         margin-bottom: 30px;
       }
 
-    @media (max-width: 1250px) {
+    @media (max-width: 992px) {
       .pricing-container {
         flex-direction: column;
         height: 100%;
       }
 
       .pricing-plan{
-        width: 45%;
+        width: 50%;
+        margin-top: 50px;
+      }
+
+      .plan-title {
+        font-size: 3.5rem;
+      }
+
+      .plan-price {
+        font-size: 2.5rem;
+      }
+
+      li {
+        font-size: 1.5rem;
+      }
+
+      button {
+        width: 150px;
+        height: 60px;
+        font-size: 1.8rem;
       }
 
     }
